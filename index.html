@@ -85,6 +85,7 @@ strong{font-weight:500;color:var(--ink)}
 .burger{display:none;position:relative;z-index:2;background:none;border:0;padding:8px;cursor:pointer}
 .burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px;transition:.3s var(--ease)}
 .nav.scrolled .burger span{background:var(--ink)}
+.mobile-menu{display:none}
 @media(max-width:920px){
   .nav-links,.nav-cta{display:none}.burger{display:block}
   .nav.menu-open::before{opacity:1}
@@ -93,7 +94,7 @@ strong{font-weight:500;color:var(--ink)}
   .nav.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .nav.menu-open .burger span:nth-child(2){opacity:0}
   .nav.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .mobile-menu{display:none;position:fixed;inset:72px 0 auto 0;z-index:99;background:rgba(255,255,255,.9);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid var(--line);padding:14px var(--pad) 28px}
+  .mobile-menu{position:fixed;inset:72px 0 auto 0;z-index:99;background:rgba(255,255,255,.9);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid var(--line);padding:14px var(--pad) 28px}
   .mobile-menu.open{display:block}
   .mobile-menu a{display:block;font-family:var(--fd);font-weight:700;font-size:1.4rem;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--line-soft)}
   .mobile-menu a .mn{font-family:var(--ft);font-size:11px;color:var(--orange);letter-spacing:.14em;margin-right:12px}
