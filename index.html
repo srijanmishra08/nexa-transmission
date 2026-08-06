@@ -69,7 +69,7 @@ strong{font-weight:500;color:var(--ink)}
 .nav.scrolled .nav-inner{padding-top:14px;padding-bottom:14px}
 .nav::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.72);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border-bottom:1px solid var(--line-soft);opacity:0;transition:opacity .4s var(--ease)}
 .nav.scrolled::before{opacity:1}
-.brand{display:flex;align-items:center;position:relative;z-index:2;height:30px}
+.brand{display:flex;align-items:center;position:relative;z-index:2;height:30px;width:52px;flex:0 0 auto}
 .brand img{height:28px;width:auto;transition:opacity .4s var(--ease);position:absolute;left:0;top:0}
 .brand .lw{opacity:1}.brand .lo{opacity:0}
 .nav.scrolled .brand .lw{opacity:0}.nav.scrolled .brand .lo{opacity:1}
@@ -312,7 +312,7 @@ form .btn-primary{width:100%;justify-content:center;margin-top:8px}
 /* ===== BRAND STRIP ===== */
 .brandstrip{border-top:1px solid var(--line)}
 .brandstrip .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;padding-block:clamp(60px,8vw,104px)}
-.brandstrip img{height:clamp(44px,5vw,58px);width:auto}
+.brandstrip img{height:clamp(200px,26vw,440px);width:auto}
 .brandstrip .tl{font-family:var(--fd);font-weight:700;font-size:clamp(1.3rem,2.6vw,2rem);letter-spacing:-.015em}
 .brandstrip .tl .o{color:var(--orange)}
 .brandstrip .sub{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-38)}
@@ -393,7 +393,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
   </div>
   <div class="hero-content">
     <h1 class="display">Precision gears for heavy industry.</h1>
-    <p class="lead">A fully integrated gear manufacturing &amp; refurbishment facility. Every stage from hardened ground gear forging to a finished inspected gear, engineered under one roof.</p>
+    <p class="lead">A fully integrated gear manufacturing &amp; refurbishment facility. Every stage from Rough forging to Finished Hardened Ground Gears, Engineered under one roof.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#capabilities">Our Capabilities <span class="arw">→</span></a>
       <a class="btn btn-glass" href="#products">Our Products &amp; Services</a>
@@ -411,13 +411,13 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
   <div class="wrap">
     <div class="eyebrow-idx reveal"><span class="n">01</span><span class="eyebrow">Who we are</span></div>
     <div class="intro-grid">
-      <h2 class="reveal">Every stage of the gear, in one facility.</h2>
+      <h2 class="reveal">Every stage of gear manufacturing, in one facility.</h2>
       <div class="intro-right reveal d1">
-        <p>Nexa Transmission is a <strong>fully integrated gear manufacturing facility</strong> in Central India's industrial heartland — machining, heat treatment, gear grinding and CMM Gear Profile Measuring, all under one roof.</p>
+        <p>Nexa Transmission is a <strong>fully integrated gear manufacturing facility</strong> in Central India's industrial heartland — Machining, Heat Treatment, Gear Grinding and CMM Gear Profile Measuring, all under one roof.</p>
         <div class="chips">
-          <span class="chip"><span class="dot"></span>Machine shop</span>
-          <span class="chip"><span class="dot"></span>Gear grinding</span>
-          <span class="chip"><span class="dot"></span>Heat treatment</span>
+          <span class="chip"><span class="dot"></span>Machine Shop</span>
+          <span class="chip"><span class="dot"></span>Gear Grinding</span>
+          <span class="chip"><span class="dot"></span>Heat Treatment</span>
           <span class="chip"><span class="dot"></span>CMM Gear Profile Measuring</span>
         </div>
       </div>
@@ -438,7 +438,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
   <div class="cap">
     <span class="eyebrow on-dark">Heavy industry</span>
     <h2>We make gears for heavy industry.</h2>
-    <p class="sub">Steel, cement, mining and power — the plants that never stop. We engineer the gears and gearboxes that keep those lines turning, where a failed drive is a stopped plant.</p>
+    <p class="sub">Steel, Cement, Mining &amp; Power, Industries that never stops. We Design &amp; Manufacture Gears &amp; Gearboxes that keeps the Industries Running.</p>
   </div>
   <div class="foot"><span>Steel · Cement · Mining · Power</span><span>Nexa Transmission</span></div>
 </section>
@@ -473,14 +473,14 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
           <h3>CNC Gear Profile Measuring</h3>
           <div class="make">Höfler EMZ 632 · CMM</div>
           <span class="din">4-axis · DIN / AGMA</span>
-          <ul><li>Profile · flank · pitch · runout</li><li>External &amp; internal gears</li><li>Reverse-engineer any unknown gear</li></ul>
+          <ul><li>Profile · Flank · Pitch · Runout</li><li>External &amp; internal gears</li><li>Reverse-engineer any unknown gear</li></ul>
           <div class="fspecs"><div><div class="fv">Ø630</div><div class="fk">Diameter</div></div><div><div class="fv">0.5–20</div><div class="fk">Module</div></div><div><div class="fv">500</div><div class="fk">Face width mm</div></div><div><div class="fv">1050</div><div class="fk">Tailstock mm</div></div></div>
         </div>
         <div class="flag">
           <svg class="fico" viewBox="0 0 48 48" fill="none" stroke="#e9762b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><path d="M24 8v8M24 32v8M8 24h8M32 24h8M12 12l6 6M30 30l6 6M36 12l-6 6M18 30l-6 6"/></svg>
           <h3>CNC Gear Hobbing</h3>
           <div class="make">Gleason Pfauter PE500</div>
-          <span class="din">5-axis CNC</span>
+          <span class="din">6-axis CNC</span>
           <ul><li>Large-envelope hobbing capacity</li><li>Full rotary B-axis positioning</li><li>Programmable for complex runs</li></ul>
           <div class="fspecs"><div><div class="fv">Ø500</div><div class="fk">Diameter</div></div><div><div class="fv">12</div><div class="fk">Module</div></div><div><div class="fv">350</div><div class="fk">Face width mm</div></div><div><div class="fv">1050</div><div class="fk">Tailstock mm</div></div></div>
         </div>
@@ -493,8 +493,8 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
           <thead><tr><th>Category</th><th>Machine</th><th>Key specification</th></tr></thead>
           <tbody>
             <tr><td class="cat">Gear Hobbing</td><td class="mk">WMW ZFWZ 800</td><td class="sp">Ø800 · Module 10 · Face 400 · Tailstock 1000</td></tr>
-            <tr><td class="cat">Gear Hobbing</td><td class="mk">Large-Capacity Hobber</td><td class="sp">Ø1000 · Module 12 · Face 700 · Tailstock 1280</td></tr>
-            <tr><td class="cat">Horizontal Boring · DRO</td><td class="mk">Donini A103</td><td class="sp">Table 1350 × 1100 · Spindle 1600</td></tr>
+            <tr><td class="cat">Gear Hobbing</td><td class="mk">Donini A103</td><td class="sp">Ø1000 · Module 12 · Face 700 · Tailstock 1280</td></tr>
+            <tr><td class="cat">Horizontal Boring · DRO</td><td class="mk">Graffenstaden</td><td class="sp">Table 1350 × 1100 · Spindle 1600</td></tr>
             <tr><td class="cat">Radial Drill</td><td class="mk">Raboma</td><td class="sp">Arm 1460 · Drill Ø75 · Taper MT5</td></tr>
             <tr><td class="cat">Lathe · DRO</td><td class="mk">Colchester</td><td class="sp">Swing Ø390 · Length 1270</td></tr>
             <tr><td class="cat">Lathe · DRO</td><td class="mk">TOS</td><td class="sp">Swing Ø800 · Length 3500</td></tr>
@@ -532,7 +532,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
         <h3 style="margin:18px 0 14px">A complete design-to-validation, in-house.</h3>
         <p style="color:var(--ink-58);font-size:15px;max-width:52ch;margin:0">A dedicated design engineer on every project, reverse-engineering capabilities that recreates any gear from a sample, and plant-wide automation. Gear Geometry captured, validated and manufactured to specifications.</p>
         <h4 class="soft-h">The software suite that enables it, and ensures the quality</h4>
-        <div class="soft-list"><span>MET CalC</span><span>Autodesk Manufacturing</span><span>SolidWorks CAM</span><span>DIVE CAE</span><span>Klingelnberg Gear Facility</span></div>
+        <div class="soft-list"><span>MET CalC</span><span>Autodesk Manufacturing</span><span>SolidWorks CAM</span><span>DIVE CAE</span><span>Klingenberg Gear Software</span></div>
       </div>
       <div class="iso-row">
         <div class="iso"><span class="c">ISO 9001</span><span class="d">Quality management</span></div>
@@ -550,7 +550,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
   <div class="cap">
     <span class="eyebrow on-dark">What we build</span>
     <h2>Any make, any application — built to OEM specification.</h2>
-    <p class="sub">Helical gear specialists building gearboxes that last, with the precision to match. One complete solution, from a single pinion to a full drive.</p>
+    <p class="sub">We Design &amp; Manufacture Precision Gears for a wide range of complex applications for Heavy Industries. 1:1 Replacement of Any make, Any application.</p>
   </div>
   <div class="foot"><span>Helical gear specialists</span><span>Built to OEM specification · Complete solution</span></div>
 </section>
@@ -566,17 +566,17 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
 
     <div class="verticals reveal">
       <div class="vert">
-        <span class="vk">Complete built gearboxes</span>
+        <span class="vk">Our range of gear boxes</span>
         <h3>In-house catalogued products.</h3>
         <p>Engineered for <strong>high performance</strong>, across a wide range of applications.</p>
       </div>
       <div class="vert">
-        <span class="vk">Spares — gears, pinions, shafts</span>
+        <span class="vk">1:1 Replacement</span>
         <h3>Drop-in replacements.</h3>
         <p>Any make, any application. A <strong>1:1 replacement</strong> that fits without any modification.</p>
       </div>
       <div class="vert">
-        <span class="vk">High-volume OEM supply</span>
+        <span class="vk">Spares — gears, pinions, shafts</span>
         <h3>Loose gears &amp; pinions.</h3>
         <p>Precision engineered, in <strong>small and large quantities</strong>.</p>
       </div>
@@ -608,54 +608,6 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
       <div class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="9" width="16" height="11" rx="1"/><path d="M8 9V5h8v4"/></svg><span class="nm">Sugar</span></div>
     </div>
 
-    <div class="reveal">
-      <div class="marq-block">
-        <div class="cust-head"><h3>Private Sector</h3><span class="g">Customers who trust us</span></div>
-        <div class="marquee"><div class="mrow">
-          <div class="plate"><img src="assets/logos/jsw.jpg" alt="JSW" /></div>
-          <div class="plate"><img src="assets/logos/jindal.png" alt="Jindal Steel &amp; Power" /></div>
-          <div class="plate"><img src="assets/logos/adani.png" alt="Adani Power" /></div>
-          <div class="plate"><span class="wm">UltraTech<small>Cement</small></span></div>
-          <div class="plate"><span class="wm">JK Lakshmi<small>Cement</small></span></div>
-          <div class="plate"><span class="wm">Godawari<small>Power &amp; Ispat</small></span></div>
-          <div class="plate"><span class="wm">Jaiswal Neco</span></div>
-          <div class="plate"><span class="wm">Nakoda TMT</span></div>
-          <div class="plate"><span class="wm">Goel TMT</span></div>
-          <div class="plate"><span class="wm">Hira Group</span></div>
-          <div class="plate"><img src="assets/logos/jsw.jpg" alt="" aria-hidden="true" /></div>
-          <div class="plate"><img src="assets/logos/jindal.png" alt="" aria-hidden="true" /></div>
-          <div class="plate"><img src="assets/logos/adani.png" alt="" aria-hidden="true" /></div>
-          <div class="plate"><span class="wm">UltraTech<small>Cement</small></span></div>
-          <div class="plate"><span class="wm">JK Lakshmi<small>Cement</small></span></div>
-          <div class="plate"><span class="wm">Godawari<small>Power &amp; Ispat</small></span></div>
-          <div class="plate"><span class="wm">Jaiswal Neco</span></div>
-          <div class="plate"><span class="wm">Nakoda TMT</span></div>
-          <div class="plate"><span class="wm">Goel TMT</span></div>
-          <div class="plate"><span class="wm">Hira Group</span></div>
-        </div></div>
-      </div>
-      <div class="marq-block">
-        <div class="cust-head"><h3>Government Sector</h3><span class="g">Public-sector partners</span></div>
-        <div class="marquee"><div class="mrow rev">
-          <div class="plate"><img src="assets/logos/sail.png" alt="SAIL — Steel Authority of India" /></div>
-          <div class="plate"><img src="assets/logos/nmdc.jpg" alt="NMDC" /></div>
-          <div class="plate"><img src="assets/logos/ntpc.png" alt="NTPC" /></div>
-          <div class="plate"><span class="wm">Coal India<small>Limited</small></span></div>
-          <div class="plate"><span class="wm">NALCO</span></div>
-          <div class="plate"><span class="wm">MPPGCL</span></div>
-          <div class="plate"><span class="wm">SECL</span></div>
-          <div class="plate"><span class="wm">Sugar Mills</span></div>
-          <div class="plate"><img src="assets/logos/sail.png" alt="" aria-hidden="true" /></div>
-          <div class="plate"><img src="assets/logos/nmdc.jpg" alt="" aria-hidden="true" /></div>
-          <div class="plate"><img src="assets/logos/ntpc.png" alt="" aria-hidden="true" /></div>
-          <div class="plate"><span class="wm">Coal India<small>Limited</small></span></div>
-          <div class="plate"><span class="wm">NALCO</span></div>
-          <div class="plate"><span class="wm">MPPGCL</span></div>
-          <div class="plate"><span class="wm">SECL</span></div>
-          <div class="plate"><span class="wm">Sugar Mills</span></div>
-        </div></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -686,12 +638,13 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
           </div>
           <div class="founder">
             <div class="fn">Kabir Arora</div><div class="fr">Co-Founder &amp; CEO</div>
-            <p>“Our facility is fully integrated — raw material to hobbing, heat treatment, precision grinding and CMM verification, all in-house. We aim to be a long-term engineering partner, not merely a supplier.”</p>
+            <p>“Growing up around this industry gave me a foundation. Ten years in, it gave me a direction. At Nexa Transmission, we are building something Central India has long needed — precision, accountability, and a partner that is genuinely invested in your uptime.”</p>
           </div>
         </div>
         <div class="contact-detail">
           <div class="cd"><div class="cl">Facility</div><div class="cv">Nexa Transmission LLP<small>Raipur, Chhattisgarh, India</small></div></div>
           <div class="cd"><div class="cl">Email</div><div class="cv"><a href="mailto:info@nexatransmission.com">info@nexatransmission.com</a></div></div>
+          <div class="cd"><div class="cl">Contact No</div><div class="cv"><a href="tel:+919981996690">+91 99819 96690</a></div></div>
         </div>
       </div>
 
