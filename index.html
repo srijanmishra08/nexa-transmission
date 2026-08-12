@@ -124,6 +124,22 @@ strong{font-weight:500;color:var(--ink)}
 .scrollcue .bar::after{content:"";position:absolute;inset:0;background:var(--orange);animation:cue 2.2s var(--ease) infinite}
 @keyframes cue{0%{transform:translateY(-100%)}60%,100%{transform:translateY(100%)}}
 @media (prefers-reduced-motion:reduce){.scrollcue .bar::after{animation:none}}
+/* hero — phone: stack in flow so nothing overlaps the nav or eyebrow */
+@media(max-width:760px){
+  .hero{height:auto;min-height:100svh;display:flex;flex-direction:column}
+  .hero-top{position:static;top:auto;left:auto;right:auto;z-index:3;padding:calc(86px + env(safe-area-inset-top)) var(--pad) 0}
+  .hero-top .eyebrow{letter-spacing:.16em;font-size:11px}
+  .hero-top .eyebrow::before{width:18px}
+  .hero-content{height:auto;flex:1 1 auto;justify-content:flex-end;padding-top:26px;padding-bottom:calc(38px + env(safe-area-inset-bottom))}
+  .hero h1{max-width:none;margin:16px 0 18px}
+  .hero .lead{font-size:1.02rem;max-width:none}
+  .hero-cta{margin-top:26px;gap:10px}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .hero-meta{margin-top:30px;padding-top:20px;gap:10px}
+  .scrollcue{display:none}
+}
+@media(max-width:400px){.display{font-size:2.5rem}}
+@media(max-width:620px){.bleed .foot{flex-direction:column;gap:7px;letter-spacing:.12em}}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:10px;font-weight:500;font-size:15px;padding:15px 28px;border-radius:12px;cursor:pointer;border:1px solid transparent;transition:transform .12s var(--ease),background .3s,color .3s,border-color .3s}
@@ -393,7 +409,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
   </div>
   <div class="hero-content">
     <h1 class="display">Precision gears for heavy industry.</h1>
-    <p class="lead">A fully integrated gear manufacturing &amp; refurbishment facility. Every stage from Rough forging to Finished Hardened Ground Gears, Engineered under one roof.</p>
+    <p class="lead">A fully integrated gear manufacturing &amp; refurbishment facility. Every stage from Rough Forging to Finished Hardened Ground Gears, Engineered under one roof.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#capabilities">Our Capabilities <span class="arw">→</span></a>
       <a class="btn btn-glass" href="#products">Our Products &amp; Services</a>
