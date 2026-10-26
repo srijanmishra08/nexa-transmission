@@ -296,8 +296,11 @@ strong{font-weight:500;color:var(--ink)}
 .contact .eyebrow-idx .n{background:#fff;color:var(--ink)}
 .contact h2{color:#fff}
 .contact .lead{color:rgba(255,255,255,.72)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:start;margin-top:clamp(40px,5vw,64px)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:stretch;margin-top:clamp(40px,5vw,64px)}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:40px}}
+.contact-card{height:100%;display:flex;flex-direction:column;justify-content:center;border:1px solid var(--w-line);border-radius:20px;padding:clamp(28px,3.5vw,40px)}
+.contact-card .cc-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--fd);font-weight:700;font-size:.82rem;color:var(--orange);border:1px solid rgba(233,118,43,.35);border-radius:999px;padding:6px 14px;margin-bottom:26px;width:fit-content}
+.contact-card .cc-note{font-size:14.5px;color:rgba(255,255,255,.7);line-height:1.6;margin-bottom:30px;max-width:420px}
 .contact-detail{display:grid}
 .cd{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--w-line);align-items:flex-start}
 .cd:first-child{border-top:0}
@@ -640,10 +643,14 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
 
     <div class="contact-grid">
       <div class="reveal">
-        <div class="contact-detail">
-          <div class="cd"><div class="cl">Facility</div><div class="cv">Nexa Transmission LLP<small>Raipur, Chhattisgarh, India</small></div></div>
-          <div class="cd"><div class="cl">Email</div><div class="cv"><a href="mailto:info@nexatransmission.com">info@nexatransmission.com</a></div></div>
-          <div class="cd"><div class="cl">Contact No</div><div class="cv"><a href="tel:+919981996690">+91 99819 96690</a></div></div>
+        <div class="contact-card">
+          <span class="cc-badge">ISO 9001 Certified</span>
+          <p class="cc-note">Every enquiry is reviewed by an engineer — not a sales desk. For drawings, specification sheets or a plant visit, reach out directly.</p>
+          <div class="contact-detail">
+            <div class="cd"><div class="cl">Facility</div><div class="cv">Nexa Transmission LLP<small>Raipur, Chhattisgarh, India</small></div></div>
+            <div class="cd"><div class="cl">Email</div><div class="cv"><a href="mailto:info@nexatransmission.com">info@nexatransmission.com</a></div></div>
+            <div class="cd"><div class="cl">Contact No</div><div class="cv"><a href="tel:+919981996690">+91 99819 96690</a></div></div>
+          </div>
         </div>
       </div>
 
