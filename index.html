@@ -69,8 +69,8 @@ strong{font-weight:500;color:var(--ink)}
 .nav.scrolled .nav-inner{padding-top:14px;padding-bottom:14px}
 .nav::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.72);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border-bottom:1px solid var(--line-soft);opacity:0;transition:opacity .4s var(--ease)}
 .nav.scrolled::before{opacity:1}
-.brand{display:flex;align-items:center;position:relative;z-index:2;height:62px;width:112px;flex:0 0 auto}
-.brand img{height:60px;width:auto;transition:opacity .4s var(--ease);position:absolute;left:0;top:0}
+.brand{display:flex;align-items:center;position:relative;z-index:2;height:80px;width:144px;flex:0 0 auto}
+.brand img{height:78px;width:auto;transition:opacity .4s var(--ease);position:absolute;left:0;top:0}
 .brand .lw{opacity:1}.brand .lo{opacity:0}
 .nav.scrolled .brand .lw{opacity:0}.nav.scrolled .brand .lo{opacity:1}
 .nav-links{display:flex;align-items:center;gap:2px;position:relative;z-index:2}
@@ -298,11 +298,6 @@ strong{font-weight:500;color:var(--ink)}
 .contact .lead{color:rgba(255,255,255,.72)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:start;margin-top:clamp(40px,5vw,64px)}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:40px}}
-.founders{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
-.founder{border:1px solid var(--w-line);border-radius:16px;padding:24px 26px;background:rgba(255,255,255,.03)}
-.founder .fn{font-family:var(--fd);font-weight:700;font-size:1.2rem}
-.founder .fr{font-size:12px;color:var(--orange);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-top:4px}
-.founder p{font-size:14.5px;color:rgba(255,255,255,.7);margin:14px 0 0;line-height:1.55}
 .contact-detail{display:grid}
 .cd{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--w-line);align-items:flex-start}
 .cd:first-child{border-top:0}
@@ -416,7 +411,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
     </div>
     <div class="hero-meta">
       <div class="mi"><b>25+ years</b> in gear engineering</div>
-      <div class="mi"><b>ISO 9001</b> · 14001 · 45001</div>
+      <div class="mi"><b>ISO 9001</b></div>
       <div class="scrollcue">Scroll <span class="bar"></span></div>
     </div>
   </div>
@@ -429,12 +424,12 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
     <div class="intro-grid">
       <h2 class="reveal">Every stage of gear manufacturing, in one facility.</h2>
       <div class="intro-right reveal d1">
-        <p>Nexa Transmission is a <strong>fully integrated gear manufacturing facility</strong> in Central India's industrial heartland — Machining, Heat Treatment, Gear Grinding and CMM Gear Profile Measuring, all under one roof.</p>
+        <p>Nexa Transmission is a <strong>fully integrated gear manufacturing facility</strong> in Central India's industrial heartland — Machining, Heat Treatment, Gear Grinding and Gear Profile Measuring, all under one roof.</p>
         <div class="chips">
           <span class="chip"><span class="dot"></span>Machine Shop</span>
           <span class="chip"><span class="dot"></span>Gear Grinding</span>
           <span class="chip"><span class="dot"></span>Heat Treatment</span>
-          <span class="chip"><span class="dot"></span>CMM Gear Profile Measuring</span>
+          <span class="chip"><span class="dot"></span>Gear Profile Measuring</span>
         </div>
       </div>
     </div>
@@ -442,7 +437,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
       <div class="stat"><div class="v">25<span class="u">+</span></div><div class="k">Years of industry expertise</div></div>
       <div class="stat"><div class="v">20<span class="u">+</span></div><div class="k">Engineers on the team</div></div>
       <div class="stat"><div class="v">4</div><div class="k">Integrated shops, one roof</div></div>
-      <div class="stat"><div class="v">3<span class="u">×</span></div><div class="k">ISO 9001 · 14001 · 45001</div></div>
+      <div class="stat"><div class="v">1<span class="u">×</span></div><div class="k">ISO 9001</div></div>
     </div>
   </div>
 </section>
@@ -552,8 +547,6 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
       </div>
       <div class="iso-row">
         <div class="iso"><span class="c">ISO 9001</span><span class="d">Quality management</span></div>
-        <div class="iso"><span class="c">ISO 14001</span><span class="d">Environmental</span></div>
-        <div class="iso"><span class="c">ISO 45001</span><span class="d">Health &amp; safety</span></div>
       </div>
     </div>
   </div>
@@ -612,7 +605,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
     <div class="eyebrow-idx reveal"><span class="n">04</span><span class="eyebrow">Who we serve</span></div>
     <div class="cap-head">
       <h2 class="reveal">Trusted across India's Heavy Industry</h2>
-      <p class="lead reveal d1">Originated in Chhattisgarh, serving both the private and government sectors — with gears and gearboxes running in plants all over India.</p>
+      <p class="lead reveal d1">Originated in Chhattisgarh, serving both the private and government sectors — with gears and gearboxes installed in plants all over India.</p>
     </div>
 
     <div class="ind-grid reveal">
@@ -647,16 +640,6 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
 
     <div class="contact-grid">
       <div class="reveal">
-        <div class="founders">
-          <div class="founder">
-            <div class="fn">Pritam Arora</div><div class="fr">Founder &amp; Managing Partner</div>
-            <p>“Central India deserved a precision gearbox manufacturer rooted here, accountable here. Twenty-five years in the gear industry taught us that transmission quality decides uptime, productivity and cost. Nexa Transmission was built to that standard.”</p>
-          </div>
-          <div class="founder">
-            <div class="fn">Kabir Arora</div><div class="fr">Co-Founder &amp; CEO</div>
-            <p>“Growing up around this industry gave me a foundation. Ten years in, it gave me a direction. At Nexa Transmission, we are building something Central India has long needed — precision, accountability, and a partner that is genuinely invested in your uptime.”</p>
-          </div>
-        </div>
         <div class="contact-detail">
           <div class="cd"><div class="cl">Facility</div><div class="cv">Nexa Transmission LLP<small>Raipur, Chhattisgarh, India</small></div></div>
           <div class="cd"><div class="cl">Email</div><div class="cv"><a href="mailto:info@nexatransmission.com">info@nexatransmission.com</a></div></div>
@@ -694,7 +677,7 @@ footer{background:#050505;color:#fff;padding:clamp(56px,8vw,88px) 0 34px}
     </div>
     <div class="foot-bottom">
       <span>© 2026 Nexa Transmission LLP. All rights reserved.</span>
-      <div class="iso2"><span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span></div>
+      <div class="iso2"><span>ISO 9001</span></div>
     </div>
     <p class="credit">Imagery: industrial reference photography, Wikimedia Commons (CC BY-SA / public domain), duotone-treated. Replace with Nexa's own facility photography before launch.</p>
   </div>
